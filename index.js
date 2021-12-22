@@ -109,13 +109,19 @@ const removeApp = ({ applicationPath, fromCli }) => {
         }
 
         if (removedApps.length){
-          resolve();
-          if (fromCli){
-            console.log(`Profiles for <${applicationPath}> have been removed.`);
-          }
+          let updatedFile = Buffer.from(JSON.stringify(json));
+
+          db.run('UPDATE DATA SET FILE = ?', updatedFile, function (err) {
+            if (err) reject(err);
+            resolve();
+            if (fromCli){
+              console.log(`Profiles for <${applicationPath}> have been removed.`);
+            }
+          });
         } else {
           reject('No matching applications found.');
           if (fromCli){
+            console.error('No matching applications found.');
             process.exit(1);
           }
         }
