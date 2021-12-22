@@ -37,7 +37,7 @@ ghub.add({applicationPath:'C:\\\\WindowsApps\\\\Microsoft.254428597CFE2_1.3266.2
 ghub.remove({applicationPath:'C:\\\\WindowsApps\\\\Microsoft.254428597CFE2_1.3266.27842.0_x64__8wekyb3d8bbwe\\\\HaloInfinite.exe'});
 ```
 
-## Others
+## Notes
 
 This script is inspired by a manual solution provided by reddit user [baseball-is-praxis
 ](https://www.reddit.com/r/LogitechG/comments/qdab4s/comment/hi341nm/)
