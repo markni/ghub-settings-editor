@@ -4,13 +4,17 @@ Having a PC game pass (Xbox game pass PC) game you can't add to Logitech G HUB d
 
 > Disclaimer: This is only for Windows PC and you will have to find out the path of executable file of the app on your own. Always shut down G Hub before running this script and always backup `C:\Users\your_username\AppData\Local\LGHUB\settings.db` beforehand.
 
+## Before you start
+
+Download and install [Node.js](https://nodejs.org/en/) if you haven't.
 
 ## Usage as a CLI tool
+You run these commands in cmd or powershell, search them in Windows start menu!
 
 ### Installation
 
 ```
-npm install -g ghub-settings-editor
+npm install -g https://github.com/markni/ghub-settings-editor
 ```
 
 ### Add a custom application:
@@ -27,7 +31,7 @@ ghub remove-app --app-path 'C:\WindowsApps\Microsoft.254428597CFE2_1.3266.27842.
 ### Installation
 
 ```
-npm install ghub-settings-editor --save
+npm install https://github.com/markni/ghub-settings-editor --save
 ```
 
 ### Usage
